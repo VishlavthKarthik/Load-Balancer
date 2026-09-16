@@ -6,8 +6,10 @@
 - **Roll Number:** 12342370  
 - **Primary Submission URL:** [http://10.1.75.51:3318](http://10.1.75.51:3318)  
 - **GitHub Repository:** [https://github.com/VishlavthKarthik/Load-Balancer](https://github.com/VishlavthKarthik/Load-Balancer)  
-
-> **AI CITATION :- I have used claude for database purpose and load balancer algorithm.**
+> **AI CITATION :-**  
+> I have used Claude as a development assistant for designing and optimizing the critical distributed systems components in this assignment:  
+> - **Dynamic Load Balancer Algorithm:** Formulating the Dynamic Least-Loaded scoring algorithm combining Exponential Moving Average (EMA) backend latency tracking with active in-flight request weighting ($\text{Score} = (\text{ActiveRequests} \times 3.0 + \text{LatencyEMA} \times 0.1) \times \text{Weight}$) and HTTP keep-alive connection pooling.  
+> - **High-Throughput Database Persistence Engine:** Solving SQLite disk fsync bottlenecks and thread locking under high concurrency by architecting an asynchronous channel-based batch-commit pipeline (grouping up to 200 messages in a single transaction in WAL mode) and implementing a zero-allocation, lockless in-memory feed buffer using Go’s `atomic.Pointer[[]byte]`.
 
 ---
 
@@ -209,4 +211,8 @@ Telemetry was captured across five scaling concurrency tiers via SSH cgroup cont
 
 ## 7. AI Citation
 
-> **AI CITATION :- I have used claude for database purpose and load balancer algorithm.**
+> **AI CITATION :-**  
+> I have used Claude as a development assistant for designing and optimizing the critical distributed systems components in this assignment:  
+> - **Dynamic Load Balancer Algorithm:** Formulating the Dynamic Least-Loaded scoring algorithm combining Exponential Moving Average (EMA) backend latency tracking with active in-flight request weighting ($\text{Score} = (\text{ActiveRequests} \times 3.0 + \text{LatencyEMA} \times 0.1) \times \text{Weight}$) and HTTP keep-alive connection pooling.  
+> - **High-Throughput Database Persistence Engine:** Solving SQLite disk fsync bottlenecks and thread locking under high concurrency by architecting an asynchronous channel-based batch-commit pipeline (grouping up to 200 messages in a single transaction in WAL mode) and implementing a zero-allocation, lockless in-memory feed buffer using Go’s `atomic.Pointer[[]byte]`.
+
